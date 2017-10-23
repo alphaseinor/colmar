@@ -1,0 +1,46 @@
+html {
+  font-size: 16px;
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+header{
+  padding: 1rem 1.5rem;
+  position:fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+}
+
+header a{
+  font-size: 2rem;
+  color: black;
+  flex: 1;
+}
+
+header img{
+  width:32px;
+}
+.colmar{
+  font-weight: bold;
+  color:grey;
+}
+
+.academy{
+  color:lightgrey;
+}
+
+header .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 1rem;
+}
