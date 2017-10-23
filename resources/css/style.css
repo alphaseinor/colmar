@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   color: black;
+  font-family: 'Imprima', sans-serif;
 }
 a{
   text-decoration: none;
@@ -11,6 +12,7 @@ header{
   z-index: 100;
   width: 100%;
   background-color: white;
+  font-family: 'Cantata One', serif;
 }
 
 header a{
