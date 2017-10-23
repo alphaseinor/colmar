@@ -17,18 +17,27 @@ header a{
   font-size: 2rem;
   color: black;
   flex: 1;
+  align-items: center;
+}
+
+header a:hover{
+  background-color: black;
+  color: white;
 }
 
 header img{
   width:32px;
 }
+
 .colmar{
   font-weight: bold;
   color:grey;
+  text-transform: uppercase;
 }
 
 .academy{
   color:lightgrey;
+  text-transform: uppercase;
 }
 
 header .content{
@@ -39,6 +48,11 @@ header .content{
 
 header nav ul{
   display: flex;
+  padding-right: 3rem;
+}
+
+li a{
+  font-size: 1.5rem;
 }
 
 nav li{
