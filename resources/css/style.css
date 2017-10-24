@@ -105,6 +105,10 @@ main{
 }
 .banner-image img{
   width: 100%;
+  border:1px solid #;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 .banner-content {
   padding-right: 4em;
