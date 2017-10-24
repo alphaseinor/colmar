@@ -1,11 +1,8 @@
 html {
   font-size: 16px;
-  color: black;
   font-family: 'Imprima', sans-serif;
 }
-a{
-  text-decoration: none;
-}
+
 header{
   padding: 1rem 1.5rem;
   position:fixed;
@@ -13,17 +10,17 @@ header{
   width: 100%;
   background-color: white;
   font-family: 'Cantata One', serif;
+  transition: background-color 2s linear 200ms, color 700ms linear 700ms;
 }
 
-header a{
+header .content{
   font-size: 2rem;
-  color: black;
   flex: 1;
   align-items: center;
 }
 
-header a:hover{
-  background-color: black;
+header:hover{
+  background-color: #778877;
   color: white;
 }
 
@@ -33,7 +30,7 @@ header img{
 
 .colmar{
   font-weight: bold;
-  color:grey;
+  color: #444444;
   text-transform: uppercase;
 }
 
@@ -51,12 +48,31 @@ header .content{
 header nav ul{
   display: flex;
   padding-right: 3rem;
+  transition: color 100ms ease-in 200ms;
+}
+
+header nav li:hover{
+  color: white;
 }
 
 li a{
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+a:link a:visited{
+  background-color: black;
+  color: white;
+  padding: .5rem .5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 nav li{
-  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+.mobile{
+  display: none;
 }
