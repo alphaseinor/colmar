@@ -3,7 +3,12 @@ html {
   font-size: 16px;
   font-family: 'Imprima', sans-serif;
 }
-/*Header section*/
+.mobile{
+  display: none;
+}
+/*
+  Header section
+*/
 header{
   display: flex;
   flex: 1;
@@ -58,7 +63,6 @@ header .content{
   vertical-align: middle;
   border-radius: .25rem;
   padding: .1rem .25rem;
-  margin: 0px;
   font-size: 1rem;
   font-weight: bold;
   transition: color 100ms ease-in 100ms, background-color 100ms ease-in 100ms;
@@ -68,10 +72,65 @@ header .content{
   color: black;
   background-color: white;
 }
+/*
+  Main Section
+*/
 
-.link{
+main{
+  position: relative;
+  top: 4rem;
 }
 
-.mobile{
-  display: none;
+/*
+  Banner Section
+*/
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  background-color: #cfddcf;
+  transition: background-color 500ms ease-in 200ms;
+}
+.banner:hover {
+  background-color: #dfffdf;
+}
+.banner-box {
+  display: flex;
+  align-items: center;
+}
+.banner-image{
+  width: 80%;
+  padding-right: 1.5rem;
+}
+.banner-image img{
+  width: 100%;
+}
+.banner-content {
+  padding-right: 4em;
+}
+.banner-header{
+  font-family: 'Cantata One', serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.banner-text {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 3rem;
+}
+.start {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: .5rem;
+  border: 1px solid #887777;
+  border-radius: 3rem;
+  background-color: white;
+  transition: color 200ms linear 200ms, background-color 200ms linear 200ms;
+}
+.start:hover {
+  background-color: #887777;
+  color: white;
 }
