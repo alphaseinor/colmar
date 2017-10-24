@@ -6,6 +6,12 @@ html {
 .mobile{
   display: none;
 }
+img{
+  border:1px solid #;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
 /*
   Header section
 */
@@ -100,18 +106,15 @@ main{
   align-items: center;
 }
 .banner-image{
-  width: 80%;
+  width: 60%;
   padding-right: 1.5rem;
 }
 .banner-image img{
   width: 100%;
-  border:1px solid #;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
 }
 .banner-content {
-  padding-right: 4em;
+  width: 40%;
+  padding-right: 1rem;
 }
 .banner-header{
   font-family: 'Cantata One', serif;
@@ -137,4 +140,183 @@ main{
 .start:hover {
   background-color: #887777;
   color: white;
+}
+
+/*
+  Featured Section, includes featured top and bottom
+*/
+
+.featured {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 1.5rem;
+  background-color: #cfcfdd;
+  transition: background-color 500ms ease-in 200ms;
+}
+
+.featured:hover {
+  background-color: #dfdfff;
+}
+
+.featured-column {
+  width: 60%;
+  padding-right: 1.5rem;
+}
+
+.featured-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.featured-column img {
+    width: 100%;
+
+}
+
+.featured h3{
+  font-family: 'Share Tech Mono', monospace;
+  text-align: right;
+}
+
+.featured-text .banner-header {
+  padding-top: 1.5rem;
+}
+
+/*
+  news section
+*/
+.news-column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.news-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 500ms ease-in 200ms, color 500ms linear 200ms;
+}
+
+.news-box:nth-child(2n+1){
+  background-color: #999999;
+  color: white;
+}
+
+.news-box:nth-child(2n+2){
+  background-color: white;
+  color: black;
+}
+
+.news-box:nth-child(2n+2):hover{
+  background-color: #222222;
+  color: white;
+}
+
+.news-box:nth-child(2n+1):hover{
+  background-color: #dddddd;
+  color: black;
+}
+
+.news-box:first-child {
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.news-box:last-child {
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.news-image {
+  width: 35%;
+  padding: 16px;
+}
+.news-image img{
+  width: 100%
+}
+.news-text {
+  width: 65%;
+  padding-right: 1.5rem;
+}
+
+.news-text h4{
+  font-family: 'Cantata One', serif;
+  font-size: 1.5rem;
+}
+
+.news-text p{
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+.news-text a{
+  text-align: center;
+}
+
+video {
+  width: 100%;
+}
+
+/*
+  courses
+*/
+
+.heading{
+  padding: 2rem 1.5rem 0 1.5rem;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.heading .banner-header{
+  padding-bottom: 0;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5rem 2.5rem
+  width; 100%;
+}
+
+.course {
+  padding: 1.5rem 2rem;
+  width:33%
+}
+.course img{
+  width 100%;
+}
+/*
+  thesis
+*/
+
+.thesis{
+  padding: 2rem 1.5rem 0 1.5rem;
+  background-color: #cfcfdd;
+  text-transform: uppercase;
+}
+
+.thesis .banner-header{
+  padding-bottom: 0;
+}
+
+/*
+  footer
+*/
+
+footer {
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  width:100%;
+  padding: 1.5rem 1rem;
+}
+footer a{
+  padding-right: 2rem;
+  text-decoration: none;
+  color: black;
+}
+.copywright{
+  width 50%;
+  flex:1;
 }
