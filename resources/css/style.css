@@ -265,7 +265,7 @@ video {
 
 .heading{
   padding: 2rem 1.5rem 0 1.5rem;
-  background-color: white;
+  background-color: grey;
   text-transform: uppercase;
 }
 
@@ -274,19 +274,66 @@ video {
 }
 
 .courses {
+  background-color: grey;
   display: flex;
   flex-wrap: wrap;
-  padding: .5rem 2.5rem
+  padding: 1.5rem 3rem;
   width; 100%;
+  justify-content: space-between;
 }
 
 .course {
-  padding: 1.5rem 2rem;
-  width:33%
+  margin: .5rem 1rem;
 }
+
+img.course-image {
+  border-radius: 1rem 1rem 0 0;
+}
+
+a.course-image{
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 1rem;
+}
+a .banner-header {
+  text-align: left;
+  font-size: 1.25rem;
+  padding: 16px;
+}
+a .banner-text {
+  text-align: left;
+  font-size: 1rem;
+  padding: 8px;
+}
+
+a.course-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  padding-bottom: 1.5rem;
+  transition: background-color 200ms linear 200ms, color 200ms linear 200ms;
+}
+
+a.course-image:hover{
+  background-color: grey;
+  font-weight: bold;
+  color: white;
+}
+
 .course img{
-  width 100%;
+  width:100%;
 }
+
+.course .banner-header {
+  width: 100%;
+}
+
+.course .banner-text {
+  width: 100%;
+}
+
 /*
   thesis
 */
