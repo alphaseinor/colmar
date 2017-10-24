@@ -19,6 +19,8 @@
     Title of webpage (appears on tab)
   -->
   <title>Colmar Academy Home Page</title>
+  <!--found this at jessodri.github.io/Colmar-Academy/resources/images/favicon.ico very nifty!-->
+  <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
 </head>
 <!--
   Start main body
@@ -30,31 +32,32 @@
      -->
     <header>
       <div class="content">
+        <div class="logo">
           <img src="./resources/images/ic-logo.svg" alt="company logo">
-          <a href="#"><span class="colmar">colmar</span><span class="academy">academy</span></a>
+          <p><span class="colmar">colmar</span><span class="academy">academy</span></p>
+        </div>
         <nav>
           <!--
             Desktop Size Menu
           -->
-          <ul class="desktop">
-            <li><a href="#">On Campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">Our Companies</a></li>
-            <li><a href="#">Sign In</a></li>
-          </ul>
+          <div class="desktop">
+            <div class="link">On Campus</div>
+            <div class="link">Online</div>
+            <div class="link">Our Companies</div>
+            <div class="link">Sign In</div>
+          </div>
           <!--
             Mobile Size Menu
           -->
-          <ul class="mobile">
-            <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
-          </ul>
+          <div class="mobile">
+            <div class="link"><img src="./resources/images/ic-logo.svg"></div>
+            <div class="link"><img src="./resources/images/ic-on-campus.svg"></div>
+            <div class="link"><img src="./resources/images/ic-online.svg"></div>
+            <div class="link"><img src="./resources/images/ic-login.svg"></div>
+          </div>
         </nav>
       </div>
     </header>
-
     <!--
       Banner
     -->
