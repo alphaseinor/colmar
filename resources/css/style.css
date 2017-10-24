@@ -280,6 +280,11 @@ video {
   padding: 1.5rem 3rem;
   width; 100%;
   justify-content: space-between;
+  transition: background-color 500ms ease-in 200ms, color 500ms linear 200ms;
+}
+
+.courses:hover {
+  background-color: #cccccc;
 }
 
 .course {
