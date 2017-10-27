@@ -81,9 +81,28 @@ header img{
 .navigation {
   padding-right: 1.5rem;
 }
+.nav-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-text{
+  padding-top: .25rem;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: .5rem;
+}
 
 .link{
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   vertical-align: middle;
   border-radius: .25rem;
@@ -511,7 +530,7 @@ a.course-image:hover{
     padding: 0 0 1.5rem 0;
     width: 100%;
   }
-  
+
 }
 
 /*
