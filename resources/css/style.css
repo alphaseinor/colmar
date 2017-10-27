@@ -245,9 +245,6 @@ main{
   background-color: #cfcfdd;
   transition: background-color 500ms ease-in 200ms;
 }
-.featured.box{
-
-}
 
 .featured:hover {
   background-color: #dfdfff;
@@ -284,13 +281,16 @@ main{
 .featured-text .banner-header {
   padding-top: 1.5rem;
 }
+
 @media only screen and (max-width: 760px){
   .featured {
     padding: 1rem;
   }
+
   .featured-column.desktop{
     display: none;
   }
+
   .featured-image.desktop{
     display: none;
   }
@@ -337,11 +337,11 @@ main{
 }
 
 .news-box:first-child {
-  border-radius: 1rem 1rem 0rem 0rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .news-box:last-child {
-  border-radius: 0rem 0rem 1rem 1rem;
+  border-radius: 0 0 1rem 1rem;
 }
 
 .news-image {
@@ -490,21 +490,20 @@ a.course-image:hover{
   .heading {
     padding: 2rem 1rem 1rem 1rem;
   }
-  .courses{
-  }
+
   .course-box{
     flex-direction: column;
     padding: 0 0 1rem 0;
   }
+
   .course{
     padding: 0 1rem .5rem 1rem;
   }
-  .course:hover{
-    background-color:
-  }
+
   .course-image{
     padding: 0;
   }
+
   a.course-image{
     width: 100%;
     display: flex;
@@ -512,12 +511,15 @@ a.course-image:hover{
     align-items: center;
     padding: 0;
   }
+
   .course .banner-header{
     padding: 1rem 1rem 2rem 1rem;
   }
+
   .course-image img {
     display: none;
   }
+
   .banner-text{
     display: none;
   }
