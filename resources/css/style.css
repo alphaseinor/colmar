@@ -16,9 +16,14 @@ img{
   border-radius: 1rem;
 }
 
-body{
-  width: 100%;
+
+@media only screen and (max-width: 760px){
+  img{
+    border: none;
+    border-radius: 0;
+  }
 }
+
 /*
   Header section
 */
@@ -182,6 +187,35 @@ main{
   background-color: #887777;
   color: white;
 }
+@media only screen and (max-width: 760px){
+  .banner{
+    padding: 0;
+  }
+  .banner-box{
+    flex-direction: column;
+  }
+  .banner-image{
+    width: 100%;
+    padding: 0;
+  }
+  .banner-content{
+    padding: 0;
+    width: 100%;
+  }
+  .banner-header{
+    padding: 2rem 1rem;
+  }
+  .banner-text{
+    padding: 2rem 1rem 1.5rem 2rem.
+  }
+  .start-mobile{
+    padding: 0 1rem 2rem 1rem;
+  }
+  .start{
+    border-radius: 0;
+    border: none;
+  }
+}
 
 /*
   Featured Section, includes featured top and bottom
@@ -225,7 +259,9 @@ main{
 .featured-text .banner-header {
   padding-top: 1.5rem;
 }
+@media only screen and (max-width: 760px){
 
+}
 /*
   news section
 */
@@ -298,6 +334,10 @@ main{
 
 video {
   width: 100%;
+}
+
+@media only screen and (max-width: 760px){
+
 }
 
 /*
@@ -380,6 +420,11 @@ a.course-image:hover{
   width: 100%;
 }
 
+@media only screen and (max-width: 760px){
+
+}
+
+
 /*
   thesis
 */
@@ -410,4 +455,8 @@ footer a{
   padding: 1rem 1.5rem;
   width 50%;
   flex:1;
+}
+
+@media only screen and (max-width: 760px){
+
 }
