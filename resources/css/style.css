@@ -399,9 +399,6 @@ video {
 
 .courses {
   background-color: grey;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1.5rem 3rem;
   width: 100%;
   justify-content: space-between;
   transition: background-color 500ms ease-in 200ms, color 500ms linear 200ms;
@@ -409,6 +406,14 @@ video {
 
 .courses:hover {
   background-color: #cccccc;
+}
+
+.course-box{
+  padding: 1.5rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .course {
@@ -468,6 +473,8 @@ a.course-image:hover{
     padding: 2rem 1rem 1rem 1rem;
   }
   .courses{
+  }
+  .course-box{
     flex-direction: column;
     padding: 0 0 1rem 0;
   }
