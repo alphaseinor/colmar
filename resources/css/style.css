@@ -2,15 +2,22 @@
 html {
   font-size: 16px;
   font-family: 'Imprima', sans-serif;
+  width: 100%
 }
+
 .mobile{
   display: none;
 }
+
 img{
   border:1px solid #;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   border-radius: 1rem;
+}
+
+body{
+  width: 100%;
 }
 /*
   Header section
@@ -37,6 +44,7 @@ header:hover{
   display: flex;
   font-size: 2rem;
   flex: 1;
+  padding-left: 1.5rem;
   align-items: center;
   justify-content: flex-start;
 }
@@ -57,13 +65,16 @@ header img{
   text-align: center;
 }
 
-header .content{
+.flexbox-header-footer{
   display: flex;
   justify-content: space-between;
   width:100%;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   align-items: center;
+  margin: 0;
+}
+
+.navigation {
+  padding-right: 1.5rem;
 }
 
 .link{
@@ -100,8 +111,6 @@ header .content{
     display: flex;
     justify-content: center;
   }
-
-
 }
 
 /*
@@ -385,16 +394,14 @@ a.course-image:hover{
 
 footer {
   font-family: 'Share Tech Mono', monospace;
-  display: flex;
   width:100%;
-  padding: 1.5rem 1rem;
 }
 footer a{
-  padding-right: 2rem;
   text-decoration: none;
   color: black;
 }
 .copywright{
+  padding: 1rem 1.5rem;
   width 50%;
   flex:1;
 }
