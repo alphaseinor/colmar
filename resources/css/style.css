@@ -2,7 +2,7 @@
 html {
   font-size: 16px;
   font-family: 'Imprima', sans-serif;
-  width: 100%
+  width: 100%;
 }
 
 .mobile{
@@ -187,6 +187,7 @@ main{
   background-color: #887777;
   color: white;
 }
+
 @media only screen and (max-width: 760px){
   .banner{
     padding: 0;
@@ -206,7 +207,7 @@ main{
     padding: 2rem 1rem;
   }
   .banner-text{
-    padding: 2rem 1rem 1.5rem 2rem.
+    padding: 2rem 1rem 1.5rem 2rem;
   }
   .start-mobile{
     padding: 0 1rem 2rem 1rem;
@@ -260,7 +261,9 @@ main{
   padding-top: 1.5rem;
 }
 @media only screen and (max-width: 760px){
-
+  .featured {
+    padding: 1rem;
+  }
 }
 /*
   news section
@@ -337,6 +340,27 @@ video {
 }
 
 @media only screen and (max-width: 760px){
+  .news-column{
+    width: 100%;
+    padding: 0;
+  }
+  .news-box{
+    flex-direction: column;
+    padding: 0;
+  }
+  .news-image{
+    width: 100%
+  }
+  .news-text{
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+    padding-right: 1rem;
+    text-align: left;
+  }
+  .news-text a{
+    font-size: 2rem;
+    text-decoration: none;
+  }
 
 }
 
@@ -359,7 +383,7 @@ video {
   display: flex;
   flex-wrap: wrap;
   padding: 1.5rem 3rem;
-  width; 100%;
+  width: 100%;
   justify-content: space-between;
   transition: background-color 500ms ease-in 200ms, color 500ms linear 200ms;
 }
@@ -421,7 +445,38 @@ a.course-image:hover{
 }
 
 @media only screen and (max-width: 760px){
-
+  .heading {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .courses{
+    flex-direction: column;
+    padding: 0 0 1rem 0;
+  }
+  .course{
+    padding: 0 1rem .5rem 1rem;
+  }
+  .course:hover{
+    background-color:
+  }
+  .course-image{
+    padding: 0;
+  }
+  a.course-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .course .banner-header{
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .course-image img {
+    display: none;
+  }
+  .banner-text{
+    display: none;
+  }
 }
 
 
@@ -439,6 +494,26 @@ a.course-image:hover{
   padding-bottom: 0;
 }
 
+@media only screen and (max-width: 760px){
+  .thesis {
+    padding: 0;
+  }
+  .thesis .banner-header{
+    padding: 2rem 0 1rem 0;
+  }
+  .featured.two{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .featured-column.two{
+    padding: 0 0 1.5rem 0;
+    width: 100%;
+  }
+  
+}
+
 /*
   footer
 */
@@ -453,10 +528,6 @@ footer a{
 }
 .copywright{
   padding: 1rem 1.5rem;
-  width 50%;
+  width: 50%;
   flex:1;
-}
-
-@media only screen and (max-width: 760px){
-
 }
